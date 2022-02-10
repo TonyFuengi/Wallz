@@ -1,0 +1,55 @@
+<resources>
+    // App constants
+    <string name="app_name">Wallz</string>
+    // SelectOption activity constants
+    <string name="button_encode">Codificar</string>
+    <string name="button_decode">Decodificar</string>
+    // Information activity constants
+    <string name="textView_app_info">Esta aplicación forma parte del Trabajo de Fin de Grado (TFG) del grado en Telecomunicaciones en Sonido e Imagen del estudiante Antonio Paredes Alarcón.\n\n
+        La aplicación consiste en un codificador/decodificador de texto sencillo mediante sustición. Existen 3 claves para codificar y decodificar mensajes:\n\n
+        - Guyot: Basado en el modelo de Guyot.\n\n
+        - Paredes: Mediante la clave propia del estudiante.\n\n
+        - Custom: El usuario puede crear su propia clave, eligiendo qué caracteres se sustituyen por qué nota musical y su duración.\n\n</string>
+    // Encode Activities constants
+    <string name="textView_write_text_to_encode">Introduce el texto a codificar:</string>
+    <string name="textView_select_key_to_use">Seleccionar Clave a utilizar:</string>
+    <string name="button_select_guyot">Guyot</string>
+    <string name="button_select_paredes">Paredes</string>
+    <string name="button_select_custom">Custom</string>
+    <string name="textView_final_text_to_encode">Texto Procesado a Codificar:</string>
+    <string name="textView_key_interval">Intervalo:</string>
+    <string name="textView_key_jump">Salto:</string>
+    <string name="button_create_file">Generar Archivo</string>
+    // Decode Activities constants
+    <string name="button_select_file">Seleccionar Archivo</string>
+    <string name="button_decode_midi_file">Decodificar Archivo</string>
+    <string name="textView_decoded_text">Texto Decodificado:</string>
+    // Create Key Activity constants
+    <string name="button_create_custom">Guardar Clave</string>
+    <string-array name="Notes">
+        <item></item>
+        <item>Do</item>
+        <item>Do#</item>
+        <item>Re</item>
+        <item>Re#</item>
+        <item>Mi</item>
+        <item>Fa</item>
+        <item>Fa#</item>
+        <item>Sol</item>
+        <item>Sol#</item>
+        <item>La</item>
+        <item>La#</item>
+        <item>Si</item>
+    </string-array>
+    <string-array name="Octaves">
+        <item></item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="Durations">
+        <item></item>
+        <item>1/2</item>
+        <item>1/4</item>
+        <item>1/8</item>
+    </string-array>
+</resources>

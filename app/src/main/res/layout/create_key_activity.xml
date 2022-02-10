@@ -1,0 +1,2056 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".CreateKeyActivity">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Caracter:"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:text="Nota:"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:text="Octava:"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="16dp"
+        android:text="Duración:"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar1"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="A"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar2"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="B"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar3"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="C"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar4"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="D"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar5"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="E"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar6"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="F"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar7"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="G"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar8"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="H"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar9"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="I"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar10"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="J"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar11"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="K"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar12"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="L"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar13"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="M"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar14"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="N"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar15"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="Ñ"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar16"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="O"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar17"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="P"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar18"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="Q"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar19"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="R"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar20"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="S"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar21"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="T"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar22"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="U"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar23"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="V"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar24"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="W"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar25"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="X"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar26"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="Y"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar27"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="Z"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar28"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text=" "
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar29"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="_"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar30"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="-"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar31"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text=","
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar32"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text=";"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar33"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text=":"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar34"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="!"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar35"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="¡"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar36"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="\?"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar37"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="¿"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar38"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="."
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar39"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="\'\'"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar40"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="("
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar41"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text=")"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewChar42"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="+"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerNoteChar42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="63dp"
+                    android:background="@color/background"
+                    android:entries="@array/Notes"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerOctaveChar42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Octaves"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerDurationChar42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:background="@color/background"
+                    android:entries="@array/Durations"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="CreateCustomKey"
+                    android:text="@string/button_create_custom" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
